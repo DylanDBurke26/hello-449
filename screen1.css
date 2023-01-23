@@ -1,0 +1,97 @@
+body{
+    font-family: 'Helvetica';
+    font-style: normal;
+    max-width: 50%;
+    margin: auto;
+}
+
+.banner{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 2%;
+    width: 100%;
+    background-color: #424242;
+    margin-bottom: 2%;
+}
+
+.title{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0.1fr 1fr;
+    column-gap: 10px;
+    margin-top: 10%;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas */
+/* idea to use grid-template-areas */
+.boxes{
+    display: grid;
+    grid-gap: 4%;
+    grid-template-areas: 
+        "a a"
+        "b c"
+        "b c";
+    grid-auto-columns: 1fr;
+    grid-template-rows: 60% auto;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    margin-top: 2%;
+}
+
+.macintosh{ grid-area: a; }
+.history{ grid-area: b; }
+.example{ grid-area: c; }
+
+.hello{
+    font-size: 56px;
+    font-weight: 700;
+    color: #424242;
+    margin-top: 2%;
+}
+
+.logo{
+    width: 100%;
+    height: 100%;
+    background-image: url('./hello-world-assets/logo.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.history, .example{
+    border-radius: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    background-color: #E9EAEC;
+    margin-bottom: 0;
+    padding-left: 25px;
+}
+
+/* https://css-tricks.com/zooming-background-images/ */
+/* idea to set background image */
+.macintosh{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    background-image: url('./hello-world-assets/federica-galli-aiqKc07b5PA-unsplash.jpg');
+    background-position:bottom;
+    background-size:cover;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.example .pre{
+    color: white;
+    background-color: #424242;
+    margin-bottom: 0;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: -25px 0 0 #424242;
+}
